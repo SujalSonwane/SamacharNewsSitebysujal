@@ -43,6 +43,11 @@ function fillDataCard(cardClone, article){
         timeZone: "Asia/Kolkata"
     })
     newssrc.innerHTML=`${article.source.name} → ${date}` ;
+    
+    cardClone.firstElementChild.addEventListener('click',()=>{
+        window.open(article.url, "_blank");
+    })
+
 }
 
 
