@@ -1,0 +1,153 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+  }
+
+  body{
+    font-family: "Roboto",Verdana, Tahoma, sans-serif;
+
+  }
+  p{
+    font-family:"Roboto", Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5 rem;
+  }
+
+  a{
+    text-decoration: none;
+  }
+  ul{
+    list-style: none;
+    padding: 20px;
+  }
+
+  .flex{
+    display: flex;
+    align-items: center;
+  }
+  .container{
+    max-width: 1300px;
+    margin-inline: auto;
+    overflow: hidden;
+  }
+
+nav {
+   background-color: #f3faff;
+   box-shadow: 0 0 4px #bbd0e2;
+   position: fixed;
+   top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding: 8px 0;
+
+}
+.company-logo img{
+width: 120px;
+
+}
+
+
+.nav-links ul{
+   gap: 20px;
+}
+
+
+.hover-links{
+cursor: pointer;
+}
+.hover-links:hover{
+    color: maroon;
+
+}
+.hover-links:active{
+    color: thistle;
+}
+
+
+.search-bar{
+    height: 30px;
+    gap: 8px;
+}
+.news-input{
+    cursor: pointer;
+    width: 200px;
+    padding: 10px;
+    border-width: 4px;
+    border-radius: 20px;
+    background-color: lightcyan;
+}
+
+.search-button{
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: lightcyan;
+    border-width: 4px;
+}
+
+.news-input:hover{
+    background-color: lightsalmon;
+}
+
+.search-button:hover{
+    background-color: lightsalmon;
+}
+
+.news-input:active{
+background-color: lightgreen;
+}
+
+.search-button:active{
+background-color: lightgreen;
+}
+
+main{
+    padding-block:20px;
+    margin-top: 150px;
+    
+}
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: start;
+    row-gap: 20px;
+
+}
+.card{
+width: 360px;
+min-height: 400;
+box-shadow: 0 0 4px #d4ecff;
+cursor: pointer;
+background-color: #fff;
+overflow: hidden;
+transition: all 0.3s ease;
+}
+.card:hover{
+    box-shadow: 1px 1px 8px springgreen ;
+    background-color:mediumspringgreen;
+    transform: translateY(-2px);
+
+}
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+}
+.card-content{
+    padding: 12px;
+ 
+}
+
+.news-src{
+    margin-block: 12px ; 
+ 
+}
