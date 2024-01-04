@@ -70,6 +70,9 @@ cursor: pointer;
 .hover-links:active{
     color: thistle;
 }
+.nav-item.active{
+ color: lightgreen;
+}
 
 
 .search-bar{
@@ -94,19 +97,19 @@ cursor: pointer;
 }
 
 .news-input:hover{
-    background-color: lightsalmon;
+    background-color: springgreen;
 }
 
 .search-button:hover{
-    background-color: lightsalmon;
+    background-color: springgreen;
 }
 
 .news-input:active{
-background-color: lightgreen;
+background-color: red;
 }
 
 .search-button:active{
-background-color: lightgreen;
+background-color: red;
 }
 
 main{
