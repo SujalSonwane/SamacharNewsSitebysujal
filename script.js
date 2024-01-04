@@ -50,4 +50,31 @@ function fillDataCard(cardClone, article){
 
 }
 
+let curSelItem = null;
+
+function onNavItemClick (id)
+{
+   fetchNews(id);
+   const navItem = document.getElementById(id);
+   curSelItem?.classList.remove('active');
+curSelItem= navItem;
+curSelItem.classList.add('active');
+}
+
+const searchButton = document.getElementById('search-button');
+const searchText= document.getElementById('news-input');
+
+searchButton.addEventListener('click', ()=>{
+    const query = searchText.value;
+    if(!query) return;
+    fetchNews(query);
+    curSelItem?.classList.remove('active');
+curSelItem= navItem;
+});
+
+function reload () {
+    window.location.reload();
+}
+
+
 
